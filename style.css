@@ -63,7 +63,7 @@ nav.site-nav a.nav-link.active {
   border-bottom: 2px solid var(--accent);
 }
 
-/* Header block (page title area) */
+/* Header block (page title area) — used on Research / Teaching / CV pages */
 header.page-header {
   margin-bottom: 40px;
   padding-bottom: 24px;
@@ -94,6 +94,81 @@ h1 {
   content: "  \00b7  ";
   color: var(--line);
 }
+
+/* Home page hero */
+.hero {
+  display: flex;
+  align-items: flex-start;
+  gap: 28px;
+  margin-bottom: 8px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid var(--line);
+}
+.avatar-placeholder {
+  flex: 0 0 auto;
+  width: 112px;
+  height: 112px;
+  border-radius: 50%;
+  border: 1px dashed var(--line);
+  background: #f2f1ee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--muted);
+  text-align: center;
+}
+.hero-copy { flex: 1 1 auto; min-width: 0; }
+.hero-name {
+  font-size: 1.6rem;
+  margin: 0 0 4px;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+}
+.hero-role {
+  color: var(--muted);
+  font-size: 1rem;
+  margin: 0 0 14px;
+}
+.hero-copy p { font-size: 0.98rem; }
+.hero-links {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 0.85rem;
+  margin-top: 6px;
+}
+.hero-links a {
+  color: var(--accent);
+  text-decoration: none;
+}
+.hero-links a:hover { text-decoration: underline; }
+
+@media (max-width: 480px) {
+  .hero { flex-direction: column; align-items: center; text-align: center; }
+  .hero-links { text-align: center; }
+}
+
+/* CV & Contact page */
+.cv-block { margin-bottom: 30px; }
+.cv-block h2 { margin-bottom: 10px; }
+.cv-block a.file-link {
+  display: inline-block;
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid var(--accent);
+  font-size: 0.98rem;
+}
+.cv-block a.file-link:hover { opacity: 0.75; }
+.contact-list {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 0.95rem;
+  color: #333;
+}
+.contact-list div { margin-bottom: 8px; }
+.contact-list a { color: var(--accent); text-decoration: none; }
+.contact-list a:hover { text-decoration: underline; }
 
 section {
   margin-bottom: 36px;
